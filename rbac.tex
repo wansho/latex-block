@@ -1,12 +1,19 @@
 \documentclass{article}
 \usepackage{CJKutf8}
+\usepackage{geometry}
+
+% 设置页面尺寸
+\geometry{
+    paperwidth=8.5in,
+    paperheight=2in,
+}
+
 \begin{document}
 \begin{CJK*}{UTF8}{gbsn}
 
 
 \begin{table}[]
 \caption{权限模型复杂度}
-\centering
 \begin{tabular}{|l|l|l|l|l|} 
 \hline
     & 笛卡尔积  &      权限分组(RBAC) & ACLs  &  ACLs\_Group   \\ 
@@ -20,6 +27,7 @@
 \hline
 \end{tabular}
 \end{table}
+
 
 \end{CJK*}
 
