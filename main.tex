@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{CJKutf8}
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+
+\begin{table}[]
+\caption{权限模型复杂度}
+\centering
+\begin{tabular}{|l|l|l|} 
+\hline
+    & 笛卡尔积  &      权限分组(RBAC)    \\ 
+\hline
+给用户授权的整体复杂度   & $|U|*|P|$ & $|P\_Group| * |U + P|$   \\
+增加一个权限的复杂度 & $|U|$  & $|P\_Group|$  \\
+查找一个用户有哪些权限      & $|P|$  &   $|P\_Group| * |P|$    \\
+查找一个权限有哪些用户拥有    & $|U|*|P|$   &  $|P\_Group| * |U|$   \\
+删除一个权限的复杂度     &  $|U|$  &  $|P\_Group|$  \\
+删除一个用户的复杂度    &  $|P|$  &  $|P\_Group|$     \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{CJK*}
+
+\end{document}
